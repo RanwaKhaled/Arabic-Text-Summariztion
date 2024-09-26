@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Arabic summarization</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Arabic Summarization Tool</h1>   
+    <form action="/" method="POST">
+        <textarea id ="aricle" name="article" rows = "10" cols="50" placeholder="Enter your article" wrap="hard"></textarea>
+        <br>
+        <input type="submit" value="Summarize text">  <!--this adds a submit button that sends the written data-->
+        <br>
+    </form>
+    <br><br>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="myfile">Select a PDF to be summarized:</label>
+        <input type="file" id="myfile" name="myfile">
+        <br><br>
+        <input type="submit" value="Summarize pdf">
+    </form>
+    <!--show processing message if PDF is being processed-->
+    {% if processing %}
+        <p>Processing PDF...This may take a few moments</p>
+    {% endif %}
+    <!--Display summary-->
+    {% if summary %}
+    <div class="generated">
+        <h2>Generated Summary</h2>
+        <p>{{ summary }}</p>
+    </div>
+    {% endif %}
+</div> 
+{% endblock %}
