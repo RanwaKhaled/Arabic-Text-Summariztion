@@ -1,12 +1,12 @@
 # Arabic Text Summariztion
 ## Text Summarization
 Is done by fine-tuning a pretrained version of mT5 which was trained on a large Arabic corpus for the summarization task.  
-<a href="https://huggingface.co/malmarjeh/t5-arabic-text-summarization">mT5 Model on hugging-face</a>  
+<a href="https://huggingface.co/malmarjeh/t5-arabic-text-summarization">mT5 Model on hugging-face</a>, you can find the find tuned version on hugging-face through <a href="https://huggingface.co/ranwakhaled/fine-tuned-T5-for-Arabic-summarization">this link</a>  
 Training was done using the <a href="">AGS Corpus dataset</a> which is the first publicly accessible abstractive summarization dataset for Arabic. It consists of 142,000 pairs of articles and summaries, all written in Modern Standard Arabic (MSA).  
 ## User interface 
 A website that uses HTML and CSS for the front end and Flask for the back end. A block of text can be typed to be summarized or we can upload a PDF in which the characters are extracted using the <a href="https://huggingface.co/MohamedRashad/arabic-small-nougat">Arabic Small Nougat</a> model on hugging face for Arabic OCR. It's a bit slow but the accuracy shows that it far outperforms other ready-made libraries like *PyMuPDF*, *PyPDF2* and others.
 ## How to run the website on your PC
-1. Download all the folder and change the paths in the code to your paths  
+1. Download all the folders
 2. Create a virtual environment and activate using `.\env\Scripts\Activate`
 3. Download all the required libraries by running the command `pip install -r requirements.txt`
 4. Run the app using `py app.py` or `flask run`
