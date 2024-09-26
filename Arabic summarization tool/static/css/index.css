@@ -1,0 +1,15 @@
+.content{
+    text-align: center;
+}
+
+.generated{
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    display: inline-block;
+    width: 600px;
+}
+
+textarea{
+    resize: none;
+}

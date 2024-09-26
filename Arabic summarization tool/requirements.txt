@@ -1,0 +1,11 @@
+flask
+torch
+torchvision
+torchaudio
+transformers
+sentencepiece
+protobuf
+Pillow
+PyMuPDF
+python-Levenshtein
+nltk
