@@ -1,4 +1,4 @@
-# Arabic Text Summariztion
+# Arabic Text Summarization
 ## Text Summarization
 Is done by fine-tuning a pretrained version of mT5 which was trained on a large Arabic corpus for the summarization task.  
 <a href="https://huggingface.co/malmarjeh/t5-arabic-text-summarization">mT5 Model on hugging-face</a>, you can find the find tuned version on hugging-face through <a href="https://huggingface.co/ranwakhaled/fine-tuned-T5-for-Arabic-summarization">this link</a>  
