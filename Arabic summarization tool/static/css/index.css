@@ -1,15 +1,107 @@
-.content{
-    text-align: center;
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffe0f0, #fdf0ff);  /* Soft pink and lavender gradient */
+    color: #4a4a4a;
 }
 
-.generated{
+/* Main content area styled like a card */
+.content {
     text-align: center;
+    margin: 50px auto;
+    padding: 30px 20px;
+    max-width: 800px;
+    background-color: #fff0f7; /* Soft pink */
+    box-shadow: 0 8px 16px rgba(255, 182, 193, 0.3); /* Subtle pink shadow */
+    border-radius: 20px;
+    border: 1px solid #ffd6e8;
+}
+
+/* Page title */
+.content h1 {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 2.3em;
+    color: #b03060; /* Rosy pink */
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    max-width: 700px;
+    resize: none;
+    padding: 14px;
+    font-size: 1em;
+    border: 2px solid #ffb6c1; /* Light pink border */
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #fff;
+    font-family: inherit;
+    box-shadow: inset 0 1px 4px rgba(255, 192, 203, 0.3);
+}
+
+/* Submit buttons */
+input[type="submit"] {
+    background-color: #ff85a2; /* Vibrant pink */
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff5c8a; /* Darker pink on hover */
+    transform: scale(1.03);
+}
+
+/* File input */
+form input[type="file"] {
+    margin-top: 10px;
+}
+
+/* Generated summary box */
+.generated {
+    text-align: left;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff9fc; /* Almost white with a pink tint */
+    border-left: 6px solid #e75480; /* Deep pink bar */
+    border-radius: 12px;
+    width: 100%;
+    max-width: 700px;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    display: inline-block;
-    width: 600px;
+    box-shadow: 0 4px 12px rgba(255, 192, 203, 0.3);
 }
 
-textarea{
-    resize: none;
+/* Summary title */
+.generated h2 {
+    margin-top: 0;
+    color: #b03060;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .content {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    textarea,
+    .generated {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
 }
