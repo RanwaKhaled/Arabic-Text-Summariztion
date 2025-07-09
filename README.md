@@ -10,7 +10,7 @@ A website that uses HTML and CSS for the front end and Flask for the back end. A
 
 ## How to run the website on your PC
 1. Download all the folders
-2. Create a virtual environment and activate using `.\env\Scripts\Activate`
+2. Create a virtual environment using `python -m venv env` and activate using `.\env\Scripts\Activate`
 3. Download all the required libraries by running the command `pip install -r requirements.txt`
 4. Run the app using `py app.py` or `flask run`
 5.   Open the domain link to see the website
